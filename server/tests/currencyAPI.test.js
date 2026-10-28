@@ -8,7 +8,7 @@ afterEach(() => {
 
 describe("Currency API tests",() => {
 
-    test('POST /api/convert/amount returns 200 for stubbed exchange rates', async () => {
+    test('POST /api/convert/amount returns 200 for stubbed exchange rate', async () => {
         vi.stubGlobal('fetch', vi.fn().mockResolvedValue({
             ok: true,
             json: async() => ({ rates: { SEK: 1.5}})
